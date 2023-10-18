@@ -108,7 +108,7 @@ function Project() {
       srcImage: "ap-noes.jpg",
       alt: "ap-noes",
       isReverse: true,
-      name: "Ap Noes",
+      name: "Ap Noes (Pass: 1)",
       description:
         "Ap Noes Unisex Fashion Shopify Theme is an exclusive eCommerce website template that you may want to choose at first look. This theme is ideal for any online store to sell casual clothing, unisex fashion, hats, glasses, etc.",
       dateTime: "(MAY 2023)",
@@ -178,7 +178,7 @@ function Project() {
       srcImage: "bridey-theme.png",
       alt: "bridey-theme",
       isReverse: false,
-      name: "Bridey Theme",
+      name: "Bridey Theme (Pass: 1)",
       description:
         "Bridey is Bridal Store WooCommerce WordPress Theme that develops to open his/her wedding / bridal shop, sell beautiful dresses and suits and decorations for those getting married",
       dateTime: "(JUL 2023)",

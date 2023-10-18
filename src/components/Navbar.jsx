@@ -1,24 +1,71 @@
 import { useState } from "react";
 import "../styles/styleComp/_nav.scss";
+import { Link } from "react-scroll";
 
 function Navbar() {
-  const [openMenu, setOpenMenu] = useState("closed-menu")
+  const [openMenu, setOpenMenu] = useState("closed-menu");
+  const handleClickScroll = () => {
+    const element = document.getElementById("about");
+
+    if (element) {
+      console.log("!23");
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <nav>
         <h3 className="logo">Zena.dev</h3>
         <ul>
-          <li>
-            <a href="#home">Home</a>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
-          <li>
-            <a href="#about">About</a>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+            >
+              About
+            </Link>
           </li>
-          <li>
-            <a href="#projects">Projects</a>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Projects
+            </Link>
           </li>
-          <li>
-            <a href="#contact">Contact</a>
+          <li className="nav-item">
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={1000}
+            >
+              Contact
+            </Link>
           </li>
           <li onClick={() => setOpenMenu("open-menu")}>
             <svg
