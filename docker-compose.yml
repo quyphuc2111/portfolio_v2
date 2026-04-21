@@ -1,7 +1,31 @@
+version: '3.8'
+
 services:
   portfolio:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: portfolio-v2
-    ports:
-      - "3080:80"
     restart: unless-stopped
+    networks:
+      - proxy
+    labels:
+      # Enable Traefik
+      - "traefik.enable=true"
+
+      # HTTP Router
+      - "traefik.http.routers.portfolio.rule=Host(`portfolio.zenadev.online`)"
+      - "traefik.http.routers.portfolio.entrypoints=web"
+
+      # HTTPS Router
+      - "traefik.http.routers.portfolio-secure.rule=Host(`portfolio.zenadev.online`)"
+      - "traefik.http.routers.portfolio-secure.entrypoints=websecure"
+      - "traefik.http.routers.portfolio-secure.tls=true"
+      - "traefik.http.routers.portfolio-secure.tls.certresolver=letsencrypt"
+
+      # Service
+      - "traefik.http.services.portfolio.loadbalancer.server.port=80"
+
+networks:
+  proxy:
+    external: true
