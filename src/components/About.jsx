@@ -27,19 +27,21 @@ function About() {
           <div className="text-side">
             <h3>About me</h3>
             <h4>
-              A dedicated Front-end Developer <br /> based in Hanoi, Vietnam
-              📍
-            </h4>
-            <p>
-              As a Junior Front-End Developer, I possess an impressive arsenal
-              of skills in HTML, CSS, JavaScript, React, NextJs, Tailwind, and SCSS. I
-              excel in designing and maintaining responsive websites that offer
-              a smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques. I am also
-              a team player who thrives in collaborating with cross-functional
-              teams to produce outstanding web applications.
-            </p>
+             A dedicated FullStack Developer <br /> based in Hanoi, Vietnam
+             📍
+           </h4>
+           <p>
+             As a FullStack Developer, I possess a strong skill set spanning
+             both front-end and back-end technologies including HTML, CSS,
+             JavaScript, TypeScript, React, Next.js, Tailwind, SCSS, Node.js,
+             Express, MongoDB, and PostgreSQL. I excel in building and
+             maintaining responsive, full-featured web applications that offer
+             a smooth user experience. My expertise lies in crafting dynamic,
+             engaging interfaces and robust server-side solutions through
+             writing clean and optimized code. I am also a team player who
+             thrives in collaborating with cross-functional teams to deliver
+             outstanding products end-to-end.
+           </p>
           </div>
         </div>
       </div>

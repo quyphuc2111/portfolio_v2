@@ -8,7 +8,6 @@ function Navbar() {
     const element = document.getElementById("about");
 
     if (element) {
-      console.log("!23");
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
     }

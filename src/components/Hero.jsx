@@ -8,19 +8,19 @@ function Hero() {
         <div className="content">
           <div className="hero-main">
             <div className="hero-text">
-              <h1>Front-End Web Developer</h1>
+              <h1>FullStack Developer</h1>
               <img
                 src="waving.png"
                 alt="waving_hand"
               />
               <p>
-                Hi, I'm Nguyen Phuc. A passionate Front-end Developer
+                Hi, I'm Nguyen Phuc. A passionate FullStack Developer
                 based in Hanoi, Vietnam. 📍
               </p>
               <span>
                 <a
                   aria-label="linkedin"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   href="https://www.linkedin.com/in/nguyen-phucc/"
                 >
@@ -45,7 +45,7 @@ function Hero() {
                 </a>
                 <a
                   aria-label="github"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   href="https://github.com/quyphuc2111"
                 >
@@ -70,31 +70,43 @@ function Hero() {
           </div>
           <div className="skills">
             <p>Tech Stack</p>
-            <div className="logos">
+           <div className="logos">
               <ul>
                 <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=html,css"
-                    alt="skill-icon"
-                  />
+                  <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
                 </li>
                 <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=js,ts"
-                    alt="skill-icon"
-                  />
+                  <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
                 </li>
                 <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=react,next"
-                    alt="skill-icon"
-                  />
+                  <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" />
                 </li>
                 <li>
-                  <img
-                    src="https://skillicons.dev/icons?i=tailwind,scss"
-                    alt="skill-icon"
-                  />
+                  <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=react" alt="React" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=scss" alt="SCSS" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=express" alt="Express" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
+                </li>
+                <li>
+                  <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" />
                 </li>
               </ul>
             </div>

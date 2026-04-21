@@ -212,22 +212,29 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1.2rem;
 
     @media (max-width: 900px) {
       justify-content: center;
+      gap: 1rem;
     }
 
     li {
       cursor: pointer;
 
       img {
-        width: 11rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
         transition: all ease-in-out 0.3s;
+        border-radius: 0.8rem;
 
         &:hover {
-          transform: translateY(-1rem);
+          transform: translateY(-0.5rem);
+        }
+
+        @media (max-width: 500px) {
+          width: 3.5rem;
+          height: 3.5rem;
         }
       }
     }
