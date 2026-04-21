@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-v2
+    ports:
+      - "3080:80"
+    restart: unless-stopped
